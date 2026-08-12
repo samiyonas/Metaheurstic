@@ -18,6 +18,7 @@ def bounded_uniform_step(curr_state, dimension, lower_bound, upper_bound, rng, p
     candidate = curr_state + rng.uniform(-step_size, step_size, size=dimension)
     return np.clip(candidate, lower_bound, upper_bound)
 
+
 # Add your chosen hyperparameters here.
 PARAMETERS = {
     "restarts": 20,
